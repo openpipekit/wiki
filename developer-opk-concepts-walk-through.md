@@ -1,4 +1,4 @@
-# In Depth Tutorial of Pipes
+# Open Pipe Kit Concepts Walk-Through
 We started out on this journey thinking about how we could make our code that pulls from sensors and pushes to databases reusable between projects and shareable between developers. It was too much to ask everyone to use the same language and environment so instead of making a framework that has plugins, we've settled on building Command Line Interface (cli) libraries that work with each other no matter what language we write them in. You may not have built a CLI before, but fret not, you already know 95% of what you need to know to build one. Let's fill in that gap with some examples.
 
 Let's start with the example of pulling data from a USB Temperature sensor and pushing that data to a Phant database.  
@@ -59,8 +59,8 @@ That's cool, but let's pipe some data using watch.
 ```
 
 
-### Starting the pipe on boot The Super Fantastic Easy Way with Pirate.sh for Raspberry Pi
-Using the [Pirate.sh](http://pirate.sh) disk image for Raspberry Pi, we're able to write out our pipe command into a file named `autorun.sh`, place that file onto a USB drive, plug it a Raspberry Pi, and it will just start running! 
+### Starting the pipe on boot The Super Fantastic Easy Way with Pirateship for Raspberry Pi
+Using the [Pirateship](http://pirate.sh) disk image for Raspberry Pi, we're able to write out our pipe command into a file named `autorun.sh`, place that file onto a USB drive, plug it a Raspberry Pi, and it will just start running! 
 
 1. Set up the Raspberry Pi. Download the disk image from [http://pirate.sh](http://pirate.sh) and burn that image to an SD Card (at least 4GB large). See directions for burning disk images to SD Cards [here](https://www.raspberrypi.org/documentation/installation/installing-images/).
 2. Write your recipe, name it `autorun.sh`, and place that file along with dependencies on a USB Drive. 
@@ -76,7 +76,7 @@ Have you made your own recipe? Let us know by creating a ticket in the [Open Pip
 
 
 ### Finding pre-existing driver for databases and sensors
-Looking to write you own Recipe but not looking to have to write both the push and the pull cli drivers?  Check out the [OPK CLI's](https://github.com/openpipekit?utf8=%E2%9C%93&query=opk-) in the Open Pipe Kit organization.  
+Looking to write your own Recipe but not looking to have to write both the push and the pull cli drivers?  Check out the [OPK CLI's](https://github.com/openpipekit?utf8=%E2%9C%93&query=opk-) in the Open Pipe Kit organization.  
 
 Have you made your own cli driver? Let us know by creating a ticket in the [Open Pipe Kit issue queue](https://github.com/openpipekit/openpipekit/issues). We'll fork you into the openpipekit organization account and make you owner of that repo.  
 
