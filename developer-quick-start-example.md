@@ -25,7 +25,7 @@ Now plug your USB drive into your Raspberry Pi with an Internet connection.  It 
 Load this code onto a USB drive even faster next time by utilizing a Yeobot Recipe that will download the code and prompt your for the string replacement. Yeobot requires [Node.js](http://nodejs.org).
 ```
 # Install the yeobot cli
-npm install -g yeobot-cli
+npm install -g yeobot
 # Change directory to your USB Drive
 cd /path-to-your-usb-drive
 # Run the yeobot cli by feeding it a repository URL. It will clone the repo and prompt you for the string replacements.
