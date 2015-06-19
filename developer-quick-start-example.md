@@ -1,7 +1,7 @@
 # Open Pipe Kit - Developer Quick Start
 
 ## Rolling the pipe by hand
-Using the [Pirateship disk image for Raspberry Pi](http://pirate.sh) (download the disk image that says "latest"), we can create a pipe that pulls temperature data from the CPU and pushes it to a CSV by adding two files to a USB Drive that we'll plug into our Raspberry Pi.
+Using the [Pirateship disk image for Raspberry Pi](http://pirate.sh) (download the disk image that says "latest"), we can create a pipe that pulls temperature data from the CPU and pushes it to a CSV by adding two files to a USB Drive that we'll plug into our Raspberry Pi. Install the image onto an SD Card following the directions on [RaspberryPi.org](https://www.raspberrypi.org/documentation/installation/installing-images/).
 
 Create an `autorunonce.sh` file and place the following code in that file. With this file in place, the next time your Raspberry Pi boots this will download the drivers that will pull and push data. Because the file is named `autorunonce.sh`, this file will only be run once and then be renamed to `autoranonce.sh` when it finishes.
 ```
