@@ -1,8 +1,13 @@
 # Open Pipe Kit for Developers
 
 ## About
+The Open Pipe Kit is a set of tools for making a pipe connecting a Device to a Database that lives on a USB Drive that you can plug into a Raspberry Pi.  It's based around Unix pipes, an "ancient technology" we all still use that allows us to write drivers for sensors and databases in any language we want and have them still work together.
 
-The Open Pipe Kit is a set of tools for making a pipe connecting a Device to a Database that lives on a USB Drive that you can plug into a Raspberry Pi.  
+Using a pipe is as simple as...
+```
+./some-sensor-driver/pull | ./some-database-driver/push
+```
+
 
 ## Links
 - [Developer quick start example](developer-quick-start-example.md)
