@@ -1,5 +1,3 @@
-![Open Pipe Kit concept](images/opk.png)
-
 We believe you deserve the right to access and control humankind's sixth sense: Sensors connected to robots. So we built a simple tool that allows you to set up a little robot for under $100 that will pipe data from your choice of sensor to your choice of database.
 
 - [Build an Open Pipe Kit](build-an-open-pipe-kit.md)
