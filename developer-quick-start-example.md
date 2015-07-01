@@ -5,7 +5,7 @@ Using the [Pirateship disk image for Raspberry Pi](http://pirate.sh) (download t
 
 Create an `autorunonce.sh` file and place the following code in that file. With this file in place, the next time your Raspberry Pi boots this will download the drivers that will pull and push data. Because the file is named `autorunonce.sh`, this file will only be run once and then be renamed to `autoranonce.sh` when it finishes.
 ```
-#! /bin/sh
+#! /bin/bash
 
 git clone https://github.com/openpipekit/opk-cli--rpi-cpu-temperature.git
 git clone https://github.com/openpipekit/opk-cli--simple-csv.git
@@ -13,7 +13,7 @@ git clone https://github.com/openpipekit/opk-cli--simple-csv.git
 
 To use those drivers to pipe the Raspberry Pi's CPU temperature data to CSV, place on your USB Drive the following lines in a file named `autorun.sh`. Replace `{{frequencyInSeconds}}` with how often you would like to store data and replace `{{fileName}}` with the name of file where you would like output to go. This will run every time the Raspberry Pi boots but after the `autorunonce.sh` file.
 ```
-#! /bin/sh
+#! /bin/bash
 
 watch -n{{frequencyInSeconds}} './opk-cli--rpi-cpu-temperature/pull | opk-cli--simple-csv/push {{fileName}}'
 ```
