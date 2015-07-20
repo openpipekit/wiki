@@ -11,7 +11,7 @@ Using a pipe is as simple as...
 - [Developer quick start example](developer-quick-start-example.md)
 - [Developer quick start example code](https://github.com/openpipekit/yeobot--pull-from-rpi-cpu-temperature-push-to-simple-csv) 
 - [Open Pipe Kit concepts walk-through](developer-opk-concepts-walk-through.md)
-- [Developer Reference](developer-reference.md)
+- [Developer Standards](developer-standards.md)
 - [Set up remote SSH access using Pagekite](ssh-tunnel-with-pagekite-example.md) 
 
 ## Support
