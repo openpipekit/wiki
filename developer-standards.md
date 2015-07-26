@@ -9,12 +9,15 @@ A package is a repository that contains Command Line Interfaces (CLI) for a devi
 - Each command must have a `--help` option and output must follow [docopt standard](http://docopt.org/). This is important for both being friendly to your neighbors and compatibility with tools like the Open Pipe Kit Bakery.
 - Optionally prefix your package's name with `opk-cli--` so friends can find it.
 
-### pull commands
+### pull command
 - Issuing a pull command will print a value on a new line and then exit.
 
-### push commands
+### push command
 - Accepts input over a `--value=<value>` option or over STDIN (`echo "42" | ./database-cli/push`) and then exits. 
 - When the database requires a schema and at least one field name, use the `--field_name=<field_name>` option. To keep thing simple for now, we take a schemaless approach. See experimental specifications below for schema based approaches.
+
+### install command
+- An install command for initialization of required environment variables and downloading of dependencies. 
 
 __Example__
 ```
