@@ -9,4 +9,4 @@ This wiki is a repository of text files on Github ([link](https://github.com/ope
 
 # Brainstorms
 - [Control power with an Open Pipe Kit](control-power.md) 
-- [Outdoor Cases for an Open Pipe Kit](outdoor-cases.md)
+- [Outdoor Cases for an Open Pipe Kit](outdoor.md)
